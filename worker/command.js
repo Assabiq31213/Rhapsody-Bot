@@ -323,7 +323,6 @@ tamnel = await reSize(`./worker/media/image/randomMenu/${rndmmenu}.png`, 200, 20
 
 if (command) {
 await sock.sendPresenceUpdate('composing', m.chat)
-sock.sendReadReceipt(from, m.sender, [m.key.id])
 }
 if (command === prefix+'verify') {
 if (isRegister) return ('Kamu Sudah Daftar') 
